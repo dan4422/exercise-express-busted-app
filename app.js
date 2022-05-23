@@ -22,5 +22,5 @@ server.listen(port, hostname, () => {
 const rootController = require('./routes/index');
 const rangersController = require('./routes/rangers');
 
-
+app.use('/', rootController)
 app.use('/rangers', rangersController);
